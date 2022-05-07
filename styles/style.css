@@ -1,0 +1,217 @@
+
+body{
+    font-family: 'Noto Sans Arabic';
+
+}
+.orng{
+    color: #eb5424;
+}
+
+.text-right{
+    text-align: right;
+
+}
+.z-space{
+padding-right:0 ;
+}
+.col1{
+    background-image: url("/images/0.jpg");
+    background-color: #fff;
+}
+.br-orng  {
+    border-bottom: 0.1rem solid #eb5424;
+  }
+.container-small{
+    overflow: visible;
+    width: 70%;
+    height: 60%;
+    margin:0 auto;
+
+}
+.login{
+    padding-bottom: 5rem;
+
+}
+.to-right{
+    float:right;
+}
+
+.to-left{
+    float:left;
+
+
+}
+
+
+    .container{
+        margin-top:5%;
+      }
+      /* Style to create scroll bar in dropdown */ 
+      .scrollable-dropdown{
+          height: auto;
+          max-height:320px;  /* Increase / Decrease value as per your need */
+          overflow-x: hidden;
+      }
+      .card-footer {
+        background: transparent;
+        border-top: 0px;
+      }
+
+
+
+
+      .login-page {
+        width: 360px;
+        padding: 8% 0 0;
+        margin: auto;
+      }
+      .form {
+        position: relative;
+        z-index: 1;
+        background: #FFFFFF;
+        max-width: 360px;
+        margin: 0 auto 100px;
+        padding: 45px;
+        text-align: center;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .form input {
+        font-family: "Roboto", sans-serif;
+        outline: 0;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      .form button {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+        outline: 0;
+        background:#eb5424;
+        width: 100%;
+        border: 0;
+        padding: 15px;
+        color: #FFFFFF;
+        font-size: 14px;
+        -webkit-transition: all 0.3 ease;
+        transition: all 0.3 ease;
+        cursor: pointer;
+      }
+      .form button:hover,.form button:active,.form button:focus {
+        background: #f73d04;
+      }
+      .form .message {
+        margin: 15px 0 0;
+        color: #b3b3b3;
+        font-size: 12px;
+      }
+      .form .message a {
+        color: #f73d04;
+        text-decoration: none;
+      }
+      .form .register-form {
+        display: none;
+      }   
+
+.orng-bg{
+    background: #eb5424;
+}
+
+.btn-orng{
+    background:#eb5424;
+
+}
+.mini{
+    border-right:  0.7rem solid #eb5424;
+}
+
+.b-r{
+    border-right:  0.1rem solid #eb5424;
+
+}
+.team-list-img {
+    padding-left: 0.75rem;
+}
+.team-list-img img {
+    height: 1.7rem;
+    width: 1.7rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.team-list-img a {
+    display: inline-block;
+    margin: 1px 0;
+    margin-left: -0.75rem;
+}
+
+.badge span {
+    background-color: #fffbec;
+    width: 3.7rem;
+    height: 1.563rem;
+    padding-bottom: 0.188rem;
+    border-radius: 0.313rem;
+    display: flex;
+    color: #eb5424;
+    justify-content: center;
+    align-items: center
+}
+
+#on {
+  width: 1rem;
+  height: 1rem;
+  background: green;
+  border-radius: 50%
+}
+
+
+#off {
+  width: 1rem;
+  height: 1rem;
+  background: grey;
+  border-radius: 50%
+}
+
+#ergent {
+  width: 1rem;
+  height: 1rem;
+  background: red;
+  border-radius: 50%
+}
+
+.cats{
+  overflow-y: scroll;
+  height: 100vh;
+  position:relative;
+
+}
+/* The heart of the matter */
+.cats-v  > .row {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.cats-v > .row > .col-sm-4 {
+  display: inline-block;
+  float: none;
+}
+
+
+.modal-dialog{
+max-width: 40rem;
+}
+
+
+.no-outline {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: grey;
+}
+.no-outline:focus {
+  border-color: #eb5424;
+}
+.focus-orng:focus{
+  border-color: #eb5424;
+
+}
