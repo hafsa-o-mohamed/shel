@@ -215,3 +215,104 @@ max-width: 40rem;
   border-color: #eb5424;
 
 }
+
+.float{
+	width:2.75rem;
+	height:2.75rem;
+	bottom:1.5rem;
+	right:1.5rem;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:2.125rem;
+	text-align:center;
+  font-size:1.875rem;
+	box-shadow: 0.125rem 0.125rem 0.188rem #999;
+}
+
+.my-float{
+	margin-top:.5rem;
+}
+
+.thank-you-pop{
+	width:100%;
+ 	padding:20px;
+	text-align:center;
+}
+.thank-you-pop img{
+	width:76px;
+	height:auto;
+	margin:0 auto;
+	display:block;
+	margin-bottom:25px;
+}
+
+.thank-you-pop h1{
+	font-size: 42px;
+    margin-bottom: 25px;
+	color:#5C5C5C;
+}
+.thank-you-pop p{
+	font-size: 20px;
+    margin-bottom: 27px;
+ 	color:#5C5C5C;
+}
+.thank-you-pop h3.cupon-pop{
+	font-size: 25px;
+    margin-bottom: 40px;
+	color:#222;
+	display:inline-block;
+	text-align:center;
+	padding:10px 20px;
+	border:2px dashed #222;
+	clear:both;
+	font-weight:normal;
+}
+.thank-you-pop h3.cupon-pop span{
+	color:#03A9F4;
+}
+.thank-you-pop a{
+	display: inline-block;
+    margin: 0 auto;
+    padding: 9px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #8BC34A;
+    border-radius: 17px;
+}
+.thank-you-pop a i{
+	margin-right:5px;
+	color:#fff;
+}
+#ignismyModal .modal-header{
+    border:0px;
+}
+.border-right-orng{
+  border-right: 0.3rem solid #eb5424;
+}
+.progress-sm{
+  height: 0.5rem !important;
+}
+
+.spacer
+{
+  width: 40%;
+  height: 40%;
+}
+
+.user-text-area {
+  user-select: text;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  border: 0 !important;
+  outline: 0 !important;
+  font-size: 1.25rem;
+}
+.user-text-area:empty:before {
+  content: "اترك تعليقاً";
+  z-index: -1;
+  color: #b3b3b3;
+}
+.user-text-area:empty:focus:before {
+  display: none;
+}
