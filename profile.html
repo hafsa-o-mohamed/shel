@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Arabic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.6.3/css/OverlayScrollbars.min.css"></script>
+
+
+    <title>شِــل</title>
+   
+
+</head>
+<body>
+    <header class="d-flex mb-4 align-items-center bg-white fixed-top px-3">
+        <button class="hamburger-btn btn mr-3" onclick="document.getElementById('side-menu').classList.toggle('open')">
+          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 24px; height: 24px;">
+            <g class="style-scope yt-icon">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon" fill="#a0a0a0"></path>
+            </g>
+          </svg>
+        </button>
+        <a class=" justify-content-start " href="index.html">
+            <div class="h4 orng">شِــل</div>
+        </a>
+        <div class=" mx-sm-5 flex-grow-1">
+          <div class="search-box input-group input-group-sm mx-auto d-none d-sm-flex">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary border search-btn" type="button" style="width: 65px;">                <span class="fas fa-search orng"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex ">
+            <div class=" dropdown mx-0 flex-shrink-0" style="width: 32px; height: 32px;">
+                <li class="orng btn mx-0 px-0 fas fa-plus-circle" style="font-size: 1.5rem;" role="button"  id="newServicetype" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu text-right" aria-labelledby="newServicetype">
+                        <a class="dropdown-item" href="#">
+                            <h4>طلب جديد</h4>
+                            <p>اطلب خدمة جديدة من اعضاء شِــل</p>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <h4>عرض جديد</h4>
+                            <p>اعرض خدمة جديدة على اعضاء شِــل</p>
+                        </a>                      </div>
+                    </div>
+                </li>
+                </div>
+            
+            <div class="my-1 mx-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                <li class="dropdown btn  orng fa fa-bell nav-item" style="font-size: 1.5rem;"  role="button"  id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="newServicetype">
+                        <a class="dropdown-item text-right" href="#">
+                            <p class="d-inline">اشعار اشعار اشعار</p>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class=" dropdown-item text-right " href="#">
+                            <div class="">
+                            <img src="https://picsum.photos/id/3/80/80" alt="img" width="25" height="25"
+                            class=" d-inline mx-2 rounded-circle border border-white"></img>
+                            <p class="d-inline">اشعار اشعار اشعار
+                                اشعار اشعار اشعار</p>
+                        
+                    </div>
+                        </a>
+                                          </div>
+                    </div>
+                </li>
+            </div>
+            <div class=" btn ml-3 mr-2">
+            <img src="https://gravatar.com/avatar/f74602760647a4ddd6fe05075207ace3?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" class="dropdown rounded-circle mx-2 flex-shrink-0" style="width: 32px; height: 32px;"  role="button"  id="Settings" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            />  
+            <div class="dropdown-menu text-right" aria-labelledby="Settings">
+                <a class="dropdown-item" href="#">
+                    <span>مستخدم جديد</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                    <span>الاعدادات</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                    <span>المساعدة</span>
+                </a> 
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                    <span>خروج</span>
+                </a> 
+              </div>
+                
+        </div>
+
+       
+            
+      </header>
+
+    <!-- dropdown -->
+
+      <div class="dropdown">
+
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">
+              <h4>عرض</h4>
+            <p>اعرض خدماتك ومهاراتك على أعضاء شِــل</p>
+          </a>
+          <a class="dropdown-item" href="#">
+            <h4>طلب</h4>
+            <p>اطلب خدمة من أعضاء شِــل</p>
+          </a>            </a>
+        </div>
+      </div>
+    <!-- Enddropdown -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter"  role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5 class="modal-title  " id="exampleModalLongTitle">خدمة جديدة</h5>
+
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                                <img src="https://picsum.photos/id/3/80/80" alt="img" width="40" height="40"
+                                    class="float-right m-2 rounded-circle border border-white">
+                                </i>
+                        <div class=" col col-md-6 col-sm-4 to-right w-100">
+                            <input type="text" class="no-outline form-control shadow-none" id="exampleFormControlInput1"
+                                placeholder="عنوان الخدمة ... ">
+                        </div>
+                      
+                    </div>
+                    <label class=" m-2 to-right" for="details">التفاصيل :</label>
+                    <div class="row p-3 d-block">
+                        <textarea class="focus-orng shadow-none mb-1 form-control" id="details" rows="3"> </textarea>
+                        <small class=" to-left">0/140</small>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-md-2 col-sm-4 m-1 p-0">
+                            <select class="focus-orng shadow-none custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>الجنس</option>
+                                <option value="1">ذكر</option>
+                                <option value="2">أنثى</option>
+                                <option value="3">الجنسين</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-4 m-1 p-0">
+                            <select class="focus-orng shadow-none custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>المجال</option>
+                                <option value="1">غذاء</option>
+                                <option value="2">نسائي</option>
+                                <option value="3">اعلام</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-4 m-1 p-0">
+                            <select class="focus-orng shadow-none custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>المدينة</option>
+                                <option value="1">جدة</option>
+                                <option value="2">الرياض</option>
+                                <option value="3">مكة</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-4 m-1 p-0">
+                            
+                            <select class=" focus-orng shadow-none custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>الأشخاص</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn m-1 text-light btn-orng btn-block">انشر الخدمة</button>
+                    <button type="button" class="btn m-1 text-light btn-secondary btn-block"
+                        data-dismiss="modal">الغاء</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal-->
+    <!-- Modal Accept Service -->
+    <div class="modal fade" id="ModalAccept" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+                 </div>
+                
+                <div class="modal-body">
+                    <div class="thank-you-pop">
+                        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+                        <h1>شكراً !  </h1>
+                        <p class="m-1">
+                            قمت بقبول الطلب
+                        </p>
+                        <p class="m-1" >بامكانكما الآن التواصل عبر الواتساب 
+                        </p>
+                     </div>
+                     <div class="float">
+                        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=966 559810437&text=Hi! Meet Sara, from Shel website."  target="_blank">
+    <i class="fa fa-whatsapp my-float text-light"></i>
+    </a>
+                    </div>
+                     
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Modal-->
+
+
+    <div class="container   w-75" >
+
+        <div class="row ">
+            <div class="col-1 spacer">
+                &nbsp;
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                <div class="col-lg-12 mx-auto px-0">
+                  <div class="card">
+                    <div class="card-header p-5 bg-dark"></div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title mt-4 pt-2 mb-0">مستخدم جديد</h5>
+                      <span lang="en">@madsobel</span>
+                      <p class="card-text mt-2">متحمس لتقديم ومشاركة الخدمات معكم 🔥</p>
+                    </div>
+                    <div class="position-absolute  profile-pic-wrapper">
+                      <img src="https://picsum.photos/id/3/80/80" class="rounded-circle img-thumbnail" alt="Mads Obel">
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              </div>
+              <ul class="nav mt-4 nav-pills mb-3 mx-auto mx-0 px-0" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link link-title active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">العرض</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-title" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">الطلب</a>
+                </li>
+              </ul>
+              <!-- content -->
+              <div class="tab-content" id="pills-tabContent p-3">
+
+                <!-- 2nd card -->
+                <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>عاجل </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">عرض توصيل إلى مكة</h3>
+                                    <p class="text-right">مكة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block" data-toggle="modal" data-target="#ModalAccept">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>توصيل</span>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>متاح </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">فعاليات دار الايتام</h3>
+                                    <p class="text-right">الرياض، السعودية</p>
+        
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>نسائي </span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 ">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>عاجل </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توصيل إلى مكة</h3>
+                                    <p class="text-right">مكة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>توصيل</span>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>متاح </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">فعاليات دار الايتام</h3>
+                                    <p class="text-right">الرياض، السعودية</p>
+        
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>نسائي </span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3nd card -->
+                <div class="tab-pane fade third" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <div class="row">
+                        <div class="col-md-3 ">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>عاجل </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">طلب توصيل إلى مكة</h3>
+                                    <p class="text-right">مكة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block" data-toggle="modal" data-target="#ModalAccept">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>توصيل</span>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>متاح </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">فعاليات دار الايتام</h3>
+                                    <p class="text-right">الرياض، السعودية</p>
+        
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>نسائي </span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="col-md-3 ">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>عاجل </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توصيل إلى مكة</h3>
+                                    <p class="text-right">مكة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>توصيل</span>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0 mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>متاح </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">فعاليات دار الايتام</h3>
+                                    <p class="text-right">الرياض، السعودية</p>
+        
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img pt-2">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <div class="to-right "> <i class="fa-solid fa-bars m-2"></i> <span>نسائي </span>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card p-3 mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div class="icon">
+                                            <img src="images/0.jpg" alt="img" width="40" height="40"
+                                                class="float-right rounded-circle border border-white">
+                                            </i>
+                                        </div>
+                                        <div class="ms-2 c-details">
+                                            <h6 class="mb-0  mx-1">سارة أحمد</h6> <small class=" mx-0 pl-3 right text-muted">منذ
+                                                2 يوم</small>
+                                        </div>
+                                    </div>
+                                    <div class="badge"> <span>تم </span>
+                                    </div>
+                                </div>
+                                <div class="mt-5">
+                                    <h3 class="heading text-right">توزيع سلال رمضانية</h3>
+                                    <p class="text-right">جدة، السعودية</p>
+                                    <div class="mt-5">
+                                        <button type="button" class="btn m-1 text-light btn-orng btn-block">قدم الخدمة</button>
+                                        <button type="button" class="btn m-1 text-light btn-secondary btn-block">تفاصيل</button>
+        
+                                        <div class="team-list-img">
+                                            <a href="#1"><img src="https://via.placeholder.com/256/fe669e/fff.png?text=1" /></a>
+                                            <a href="#2"><img src="https://via.placeholder.com/256/9f9cfc/fff.png?text=2" /></a>
+                                            <a href="#3"><img src="https://via.placeholder.com/256/7952b3/fff.png?text=3" /></a>
+                                            <a href="#4"><img src="https://via.placeholder.com/256/0d6efd/fff.png?text=4" /></a>
+                                            <a href="#5"><img src="https://via.placeholder.com/256/fd7e14/fff.png?text=5" /></a>
+                                            <div class="to-right"> <i class="fa-solid fa-bars m-2"></i><span>غذاء </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+        </div>
+        <div id="page" class="d-flex mt-5 pt-3">
+          
+            <aside id="side-menu" class="mobile  ">
+              <div class="side-menu-header d-flex align-items-center pl-3">
+                <button class="hamburger-btn btn mr-3" onclick="document.getElementById('side-menu').classList.toggle('open')">
+                  <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 24px; height: 24px;">
+                    <g class="style-scope yt-icon">
+                      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon" fill="#a0a0a0"></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="side-menu-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item d-flex align-items-center active">
+                  <span class="h5 orng">الخدمات</span>
+                </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  
+                  <span>غذاء</span>
+                </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  <span>توصيل</span>
+                </a>
+                <a href="#" class="list-group-item d-flex align-items-center">
+                    <span>طبي</span>
+                  </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                    <span>نسائي</span>
+                  </a>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item d-flex align-items-center active">
+                        <span class="h5 orng">شِــل</span>
+                      </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  <span class=" text-truncate">عنـا</span>
+                </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  <span class="text-truncate">المساعدة</span>
+                </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  <span class="text-truncate">سياسة الخصوصية</span>
+                </a>
+                  <a href="#" class="list-group-item d-flex align-items-center">
+                  <span class="text-truncate">تواصل</span>
+                </a>
+                </div>
+    
+              </div>
+            </aside>
+            <div class="side-menu-backdrop" onclick="document.getElementById('side-menu').classList.toggle('open')"></div>
+          </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="scripts/app/app-components-overview.1.1.0.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
