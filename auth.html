@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Arabic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.6.3/css/OverlayScrollbars.min.css"></script>
+
+
+    <title>شِــل</title>
+   
+
+</head>
+<body>
+    <header class="d-flex align-items-center bg-white fixed-top px-3">
+        
+        <a class=" justify-content-start " href="index.html">
+            <div class="h4 orng">شِــل</div>
+        </a>
+        <div class=" mx-sm-5 flex-grow-1">
+          <div class="search-box input-group input-group-sm mx-auto d-none d-sm-flex">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+
+              <button class="btn btn-outline-secondary border search-btn" type="button" style="width: 65px;">                <span class="fas fa-search orng"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex ">
+            <div class=" dropdown mx-0 flex-shrink-0" style="width: 32px; height: 32px;">
+                <li class="orng btn mx-0 px-0 fas fa-plus-circle" style="font-size: 1.5rem;" role="button"  id="newServicetype" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu text-right" aria-labelledby="newServicetype">
+                        <a class="dropdown-item" href="#">
+                            <h4>طلب جديد</h4>
+                            <p>اطلب خدمة جديدة من اعضاء شِــل</p>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <h4>عرض جديد</h4>
+                            <p>اعرض خدمة جديدة على اعضاء شِــل</p>
+                        </a>                      </div>
+                    </div>
+                </li>
+                </div>
+            
+            <div class="my-1 mx-2 flex-shrink-0" style="width: 32px; height: 32px;">
+                <li class="dropdown btn  orng fa fa-bell nav-item" style="font-size: 1.5rem;"  role="button"  id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="newServicetype">
+                        <a class="dropdown-item text-right" href="#">
+                            <p class="d-inline">اشعار اشعار اشعار</p>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class=" dropdown-item text-right " href="#">
+                            <div class="">
+                            <img src="https://picsum.photos/id/3/80/80" alt="img" width="25" height="25"
+                            class=" d-inline mx-2 rounded-circle border border-white"></img>
+                            <p class="d-inline">اشعار اشعار اشعار
+                                اشعار اشعار اشعار</p>
+                        
+                    </div>
+                        </a>
+                                          </div>
+                    </div>
+                </li>
+            </div>
+            <div class="ml-3 mr-2">
+            <img src="https://gravatar.com/avatar/f74602760647a4ddd6fe05075207ace3?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" class="rounded-circle mx-2 flex-shrink-0" style="width: 32px; height: 32px;"
+            />  
+        </div>
+
+        </div>
+       
+            
+      </header>
+
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+            <a class="navbar-brand  px-md-5" href="index.html">
+                <div class="h4 orng">شِــل</div>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+    
+                </ul>
+    
+            </div>
+            <div class="row px-md-5">
+                <div class="col-4 col-sm  justify-content-end align-self-center">
+                    <ul class="navbar-nav g-2  justify-content-between">
+                        <li class="btn btn-sm btn-orng text-light">تسجيل</li>
+                    </ul>
+                </div>
+    
+    
+            </div>
+    
+        </nav>
+        <div class="br-orng orng"></div>
+        <!--End Nav-->
+    
+        <div class="login-page">
+            <div class="form">
+              <form class="register-form">
+                <input type="text" placeholder="الاسم"/>
+                <input type="password" placeholder="كلمة المرور"/>
+                <input type="text" placeholder="البريد الالكتروني"/>
+                <button class="btn-orng">انشئ حساباً</button>
+                <p class="message">لديك حساب بالفعل؟<a href="#">سجل دخولك</a></p>
+              </form>
+              <form class="login-form">
+                <input type="text" placeholder="اسم المستخدم"/>
+                <input type="password" placeholder="كلمة المرور"/>
+                <button class="btn-orng">تسجيل الدخول</button>
+                <p class="message"> ليس لديك حساب؟ <a href="#">سجل</a></p>
+              </form>
+            </div>
+          </div>
+    
+    
+      <!--Start Footer-->
+    
+    
+      <footer class=" main-footer d-flex p-2 px-3 bg-white border-top ">
+        <span class="mx-auto copyright ml-auto my-auto mr-2">جميع الحقوق محفوظة
+            <a href="https://designrevision.com" rel="nofollow">شِــل</a> © 2022
+    
+        </span>
+    </footer>
+    <!--End Footer-->
+    
+    
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="scripts/app/app-components-overview.1.1.0.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+  <script src="js/auth.js"></script>
+
+
+</body>
+
+</html>
